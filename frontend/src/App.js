@@ -1,25 +1,3 @@
-// import React from "react";
-// import {Route , BrowserRouter as Router,  Routes} from "react-router-dom";
-// import Home from "./views/Home";
-// import About from "./views/About";
-
-
-// function App() {
-//   return (
-//     <Router>
-//       <div className ="container">
-//         <Routes>
-//           <Route path='/about' element = {<About/>} />
-//           <Route path='/' element = {<Home/>} />
-//         </Routes>
-//       </div>
-//     </Router>
-//   );
-// }
-// const root =document.getElementById("root");
-// root.render(<App />);
-// export default App;
-
 import React from 'react';
 import NavBar from './components/NavMenu/NavMenu.js';
 import Home from './views/Home.js';

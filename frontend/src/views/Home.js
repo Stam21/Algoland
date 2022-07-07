@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import NavMenu from "../components/NavMenu/NavMenu";
+import './Global.css';
 
 function Home() {
   return (

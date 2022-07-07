@@ -1,12 +1,22 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
+import './NavMenu.css';
 class NavMenu extends React.Component {
 
-    render()
+    render()    
     {
             return (
-                <h1>Here is the navbar</h1>
+                <div className="wrapper flex-row">
+                    <div class="container brand-wrapper">
+                        <div class="logo-cnt flex-row">
+                            <img src="../../../assets/img/logo-social.png"></img>
+                        </div>
+                    </div>
+                    <div class="container navigation-wrapper">
+                        {this.navigationList()}
+                    </div>
+                </div>
+
                 // <nav>
                 //     <ul>
                 //         <li><Link to="Home">Home</Link></li>
@@ -16,7 +26,15 @@ class NavMenu extends React.Component {
             );
     }
 
+    navigationList()
+    {
+        return (
+            <h1>yo</h1>
+        );
+    }
 }
+
+
 
 
 // const NavMenu = () => {

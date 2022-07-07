@@ -1,0 +1,26 @@
+.wrapper
+{
+    width: 100%;
+    background-color: red;
+}
+
+.wrapper .brand-wrapper
+{
+    background-color: yellow;
+    width: 200px;
+}
+
+
+
+.brand-wrapper .logo-cnt img
+{
+    width: 100%;
+
+}
+
+.wrapper .navigation-wrapper
+{
+    background-color: green;
+    width: 100%;
+}
+

@@ -1,11 +1,10 @@
-import NavMenu from "./components/NavMenu/NavMenu";
-import Router from "./Router"
+import React from "react";
+import RouterSetup from "./views/Router"
 
 function App() {
   return (
-    <div className="App">
-      <NavMenu />
-      <Router />
+    <div className ="container">
+        <RouterSetup />
     </div>
   );
 }

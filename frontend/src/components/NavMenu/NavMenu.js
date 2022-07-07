@@ -16,16 +16,10 @@ class NavMenu extends React.Component {
                         {this.navigationList()}
                     </div>
                 </div>
-
-                // <nav>
-                //     <ul>
-                //         <li><Link to="Home">Home</Link></li>
-                //         <li><Link to="About">About</Link></li>
-                //     </ul> 
-                // </nav>
             );
     }
 
+    // Navigation items list of menu.
     navigationList()
     {
         return (

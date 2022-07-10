@@ -6,21 +6,26 @@ class NavMenu extends React.Component {
     render()    
     {
             return (
-                <div className="wrapper flex-row">
-                    <div class="container brand-wrapper">
+                <div className="component-wrapper flex-row">
+                    {/* Brand component */}
+                    <div class="brand-cnt">
                         <div class="logo-cnt flex-row">
                             <img src="../../../assets/img/logo-social.png"></img>
-                        </div>
+                        </div>  
                     </div>
-                    <div class="container navigation-wrapper">
-                        {this.navigationList()}
+                    {/* END OF - Brand component */}
+
+                    {/* Nav-bar component*/}
+                    <div class="navigation-cnt">
+                        {this.navigationMenuListComponent()}
                     </div>
+                    {/* END OF - Nav-bar component */}
                 </div>
             );
     }
 
     // Navigation items list of menu.
-    navigationList()
+    navigationMenuListComponent()
     {
         return (
             <h1>yo</h1>

@@ -9,14 +9,12 @@ class NavMenu extends React.Component {
                 <div className="component-wrapper flex-row">
                     {/* Brand component */}
                     <div class="brand-cnt">
-                        <div class="logo-cnt flex-row">
-                            <img src="../../../assets/img/logo-social.png"></img>
-                        </div>  
+                        {this.brandMenuComponent()}
                     </div>
                     {/* END OF - Brand component */}
 
                     {/* Nav-bar component*/}
-                    <div class="navigation-cnt">
+                    <div class="navigation-cnt flex-row-center">
                         {this.navigationMenuListComponent()}
                     </div>
                     {/* END OF - Nav-bar component */}
@@ -24,11 +22,24 @@ class NavMenu extends React.Component {
             );
     }
 
+    brandMenuComponent() 
+    {
+        return (
+            <div class="logo-cnt flex-row">
+                <img src="../../../assets/img/logo-social.png"></img>
+            </div>
+        )
+    }
+
     // Navigation items list of menu.
     navigationMenuListComponent()
     {
         return (
-            <h1>yo</h1>
+            <ul className="navigation-list flex-row-center">
+                <li>Home</li>
+                <li>About</li>
+                <li>Code Editor</li>
+            </ul>
         );
     }
 }

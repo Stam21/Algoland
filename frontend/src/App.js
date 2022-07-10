@@ -1,13 +1,21 @@
-import React from "react";
-import RouterSetup from "./views/Router"
+import React from 'react';
+import NavBar from './components/NavMenu/NavMenu.js';
+import Home from './views/Home.js';
+import About from './views/About.js'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className ="container">
-        <RouterSetup />
-    </div>
+    <Router>
+      <div className="app-container">
+        <NavBar />
+        <Routes>
+          <Route path='/About' exact element={<About/>} />
+          <Route path='/' element={<Home/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
-const root =document.getElementById("root");
-root.render(<App />);
+
 export default App;

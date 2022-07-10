@@ -1,0 +1,40 @@
+.component-wrapper
+{
+    width: 100%;
+    background-color: red;
+
+    .brand-cnt
+    {
+        background-color: yellow;
+        width: 200px;
+
+        .logo-cnt
+        {
+            
+            img 
+            {
+                width: 100%;
+            }
+        }
+    }
+
+    .navigation-cnt
+    {
+        background-color: green;
+        width: 100%;
+
+        .navigation-list
+        {
+            width: 60%;
+            background: pink;
+            list-style-type: none;
+
+            li
+            {
+                background: red;
+                max-height: 25px;
+            }
+        }
+    }
+
+}

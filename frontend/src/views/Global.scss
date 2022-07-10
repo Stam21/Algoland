@@ -1,0 +1,68 @@
+/* 
+    On this file will contain all the necessary global
+    css rules that is essentiall for every view of our application.
+ */
+@import 'Functions.scss';
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+// FLEX ROW RULES
+
+.flex-row
+{
+    @include flex(row);
+}
+
+.flex-row-jcenter
+{
+    @include flex(row);
+    justify-content: center;
+}
+
+.flex-row-acenter
+{
+    @include flex(row);
+    align-items: center;
+}
+
+.flex-row-jcenter-acenter
+{
+    @include flex(row);
+    align-items: center;
+    justify-content: center;
+}
+
+// END OF - FLEX ROW 
+
+
+
+// FLEX COL RULES
+.flex-col
+{
+    @include flex(column);
+}
+
+.flex-col-acenter
+{
+    @include flex(column);
+    align-items: center;
+}
+
+.flex-col-jcenter
+{
+    @include flex(column);
+    justify-content: center;
+}
+
+.flex-col-jcenter-acenter
+{
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+}
+// END OF - FLEX COL RULES

@@ -2,25 +2,26 @@
 {
     width: 100%;
     background-color: red;
+
+    .brand-wrapper
+    {
+        background-color: yellow;
+        width: 200px;
+
+        .logo-cnt
+        {
+            
+            img 
+            {
+                width: 100%;
+            }
+        }
+    }
+
+    .navigation-wrapper
+    {
+        background-color: green;
+        width: 100%;
+    }
+
 }
-
-.wrapper .brand-wrapper
-{
-    background-color: yellow;
-    width: 200px;
-}
-
-
-
-.brand-wrapper .logo-cnt img
-{
-    width: 100%;
-
-}
-
-.wrapper .navigation-wrapper
-{
-    background-color: green;
-    width: 100%;
-}
-

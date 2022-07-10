@@ -1,9 +1,9 @@
-.wrapper
+.component-wrapper
 {
     width: 100%;
     background-color: red;
 
-    .brand-wrapper
+    .brand-cnt
     {
         background-color: yellow;
         width: 200px;
@@ -18,7 +18,7 @@
         }
     }
 
-    .navigation-wrapper
+    .navigation-cnt
     {
         background-color: green;
         width: 100%;

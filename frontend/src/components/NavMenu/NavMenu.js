@@ -7,21 +7,22 @@ class NavMenu extends React.Component {
     {
             return (
                 <div className="component-wrapper flex-row">
-                    {/* Brand component */}
+
+                    {/* logo component */}
                     <div class="brand-cnt">
                         {this.brandMenuComponent()}
                     </div>
-                    {/* END OF - Brand component */}
 
-                    {/* Nav-bar component*/}
+                    {/* navigation list component */}
                     <div class="navigation-cnt flex-row-jcenter">
                         {this.navigationMenuListComponent()}
                     </div>
-                    {/* END OF - Na v-bar component */}
+
                 </div>
             );
     }
 
+    //Logo component
     brandMenuComponent() 
     {
         return (
@@ -35,7 +36,7 @@ class NavMenu extends React.Component {
     navigationMenuListComponent()
     {
         return (
-            <ul className="navigation-list flex-row-jcenter">
+            <ul className="navigation-list flex-row-jcenter-acenter">
                 <li>Home</li>
                 <li>About</li>
                 <li>Code Editor</li>
@@ -43,19 +44,4 @@ class NavMenu extends React.Component {
         );
     }
 }
-
-
-
-
-// const NavMenu = () => {
-//     return (
-//     <nav>
-//         <ul>
-//             <li><Link to="Home">Home</Link></li>
-//             <li><Link to="About">About</Link></li>
-//         </ul> 
-//     </nav>
-//     );
-// };
-
 export default NavMenu;

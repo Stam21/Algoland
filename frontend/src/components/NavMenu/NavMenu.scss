@@ -22,6 +22,19 @@
     {
         background-color: green;
         width: 100%;
+
+        .navigation-list
+        {
+            width: 60%;
+            background: pink;
+            list-style-type: none;
+
+            li
+            {
+                background: red;
+                max-height: 25px;
+            }
+        }
     }
 
 }

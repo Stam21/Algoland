@@ -14,10 +14,10 @@ class NavMenu extends React.Component {
                     {/* END OF - Brand component */}
 
                     {/* Nav-bar component*/}
-                    <div class="navigation-cnt flex-row-center">
+                    <div class="navigation-cnt flex-row-jcenter">
                         {this.navigationMenuListComponent()}
                     </div>
-                    {/* END OF - Nav-bar component */}
+                    {/* END OF - Na v-bar component */}
                 </div>
             );
     }
@@ -35,7 +35,7 @@ class NavMenu extends React.Component {
     navigationMenuListComponent()
     {
         return (
-            <ul className="navigation-list flex-row-center">
+            <ul className="navigation-list flex-row-jcenter">
                 <li>Home</li>
                 <li>About</li>
                 <li>Code Editor</li>

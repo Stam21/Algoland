@@ -15,3 +15,14 @@
     flex-direction: row;
 }
 
+.flex-row-center
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-col
+{
+    display: flex;
+}

@@ -2,6 +2,7 @@
     On this file will contain all the necessary global
     css rules that is essentiall for every view of our application.
  */
+@import 'Functions.scss';
 
 *
 {
@@ -9,20 +10,58 @@
     padding: 0;
 }
 
+// FLEX ROW RULES
+
 .flex-row
 {
-    display: flex;
-    flex-direction: row;
+    @include flex(row);
 }
 
-.flex-row-center
+.flex-row-jcenter
 {
-    display: flex;
-    flex-direction: row;
+    @include flex(row);
     justify-content: center;
 }
 
+.flex-row-acenter
+{
+    @include flex(row);
+    align-items: center;
+}
+
+.flex-row-jcenter-acenter
+{
+    @include flex(row);
+    align-items: center;
+    justify-content: center;
+}
+
+// END OF - FLEX ROW 
+
+
+
+// FLEX COL RULES
 .flex-col
 {
-    display: flex;
+    @include flex(column);
 }
+
+.flex-col-acenter
+{
+    @include flex(column);
+    align-items: center;
+}
+
+.flex-col-jcenter
+{
+    @include flex(column);
+    justify-content: center;
+}
+
+.flex-col-jcenter-acenter
+{
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+}
+// END OF - FLEX COL RULES

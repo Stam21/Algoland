@@ -15,26 +15,37 @@
 
 .flex-row
 {
-    @include flex(row);
+    // @include flex(row);
+    @include flexbox();
+    @include flex-direction(row);
 }
 
 .flex-row-jcenter
 {
-    @include flex(row);
-    justify-content: center;
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-align(0,center);
+    // @include flex(row);
+    // justify-content: center;
 }
 
 .flex-row-acenter
 {
-    @include flex(row);
-    align-items: center;
+    // @include flex(row);
+    // align-items: center;
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-align (center,0);
 }
 
 .flex-row-jcenter-acenter
 {
-    @include flex(row);
-    align-items: center;
-    justify-content: center;
+    // @include flex(row);
+    // align-items: center;
+    // justify-content: center;
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-align(center,center);
 }
 
 // END OF - FLEX ROW 
@@ -44,25 +55,36 @@
 // FLEX COL RULES
 .flex-col
 {
-    @include flex(column);
+    // @include flex(column);
+    @include flexbox();
+    @include flex-direction(column);
 }
 
 .flex-col-acenter
 {
-    @include flex(column);
-    align-items: center;
+    // @include flex(column);
+    // align-items: center;
+    @include flexbox();
+    @include flex-direction(column);
+    @include flex-align(center,0);
 }
 
 .flex-col-jcenter
 {
-    @include flex(column);
-    justify-content: center;
+    // @include flex(column);
+    // justify-content: center;
+    @include flexbox();
+    @include flex-direction(column);
+    @include flex-align(0,center);
 }
 
 .flex-col-jcenter-acenter
 {
-    @include flex(column);
-    justify-content: center;
-    align-items: center;
+    @include flexbox();
+    @include flex-direction(column);
+    @include flex-align(center,center);
+    // @include flex(column);
+    // justify-content: center;
+    // align-items: center;
 }
 // END OF - FLEX COL RULES

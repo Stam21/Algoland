@@ -14,7 +14,7 @@ class NavMenu extends React.Component {
                     </div>
 
                     {/* navigation list component */}
-                    <div class="navigation-cnt flex-row-jcenter">
+                    <div class="navigation-cnt">
                         {this.navigationMenuListComponent()}
                     </div>
 

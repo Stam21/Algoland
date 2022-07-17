@@ -1,4 +1,0 @@
-TODO:
-    Explain
-        - How css system is working ?
-        - How componentes/views are working ?

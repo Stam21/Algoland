@@ -1,0 +1,45 @@
+@mixin flexbox()
+{
+    display:-webkit-box; // old
+    display:-moz-box; // old
+    display:-ms-flexbox; // ie
+    display:-webkit-flex; // new
+    display:flex; // new
+}
+
+@mixin flex-direction($direction)
+{
+    @if $direction == column
+    {
+        -webkit-flex-direction: vertical;
+        -moz-flex-direction: vertical;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    @else
+    {
+        -webkit-flex-direction: horizontal;
+        -moz-flex-direction: horizontal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+}
+
+@mixin flex-align($align, $justify)
+{
+    @if ($align == center && $justify == center)
+    {
+        align-items: center;
+        justify-content: center;
+    }
+    @else if ($align == 0 && $justify == center)
+    {
+        justify-content: center;
+    }
+    @else if ($align == center && $justify == 0)
+    {
+        align-items: center;
+    }
+}
